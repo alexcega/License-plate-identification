@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/alexc/Documents/GitHub/License-plate-identification/mlruns/199387986432762792/5f4d70ec7c84447a83410d3112b9d116/artifacts
+end_time: 1763043315240
+entry_point_name: ''
+experiment_id: '199387986432762792'
+lifecycle_stage: active
+run_id: 5f4d70ec7c84447a83410d3112b9d116
+run_name: retro_import_first_steps
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763043242434
+status: 3
+tags: []
+user_id: alexc

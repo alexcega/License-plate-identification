@@ -1,0 +1,12 @@
+# Ignore dataset folders
+License-Plate-Recognition-1/valid/
+License-Plate-Recognition-1/test/
+License-Plate-Recognition-1/train/
+
+runs/
+## MLflow
+mlruns\.trash
+
+
+# Ignore YOLO weight files
+yolo*.pt

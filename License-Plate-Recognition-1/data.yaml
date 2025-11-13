@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['License_Plate']
+
+roboflow:
+  workspace: floor-plan-ai-extraction
+  project: license-plate-recognition-rxg4e-mmjvn
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/floor-plan-ai-extraction/license-plate-recognition-rxg4e-mmjvn/dataset/1
