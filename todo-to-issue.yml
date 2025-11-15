@@ -1,0 +1,28 @@
+name: TODO to Issue
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - develop
+
+jobs:
+  todo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Convert TODOs to Issues
+        uses: alstr/todo-to-issue-action@v5
+        with:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          BEFORE: ${{ github.event.before }}
+          SHA: ${{ github.sha }}
+          GITHUB_URL: https://api.github.com
+          AUTO_P: true          # handle line breaks nicely
+          AUTO_ASSIGN: true     # assign issue to the author of the commit
+          LABEL: "todo"         # label for these issues (optional)
+          IDENTIFIERS: "TODO,FIXME"  # comment tags to look for (optional)
